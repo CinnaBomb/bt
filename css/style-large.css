@@ -17,17 +17,13 @@
       border: 1px solid rgba(255, 255, 255, 0); }
   /* HEADER */
   .logo {
-    position: relative;
-    margin: auto; }
+    display: block;
+    position: relative; }
     .logo img {
       display: block;
       margin: auto;
-      width: 70%;
-      min-width: 300px;
-      max-width: 400px; }
+      width: 400px; }
   .top-nav {
-    text-align: center;
-    text-align: center;
     height: 120px;
     position: relative; }
     .top-nav img {
@@ -35,33 +31,29 @@
     .top-nav img:first-child {
       visibility: visible;
       display: block;
-      min-width: 500px;
-      width: 100%;
-      max-width: 800px;
+      max-width: 600px;
       position: relative;
       margin: auto; }
-    .top-nav a {
-      top: -100px;
+    .top-nav .links {
       position: relative;
-      display: inline-block;
-      text-shadow: -2px 2px black;
-      text-decoration: none;
-      padding: 10px 20px 0 20px;
-      color: white;
-      font-size: 180%;
-      font-family: 'courgette';
-      letter-spacing: -2px; }
+      text-align: center;
+      top: -550px; }
+      .top-nav .links a {
+        text-shadow: -2px 2px black;
+        text-decoration: none;
+        padding: 10px 20px 0 20px;
+        color: white;
+        font-size: 180%;
+        font-family: 'courgette';
+        letter-spacing: -2px; }
   /* LOLLIPOP SIDEBAR STYLES */
   .side-nav {
-    display: block;
     position: relative; }
     .side-nav .tree {
       position: absolute;
-      display: block;
       width: 230px; }
     .side-nav [class*="lolli"] {
       position: absolute;
-      display: block;
       width: 120px;
       font-family: Courgette;
       color: brown; }
@@ -106,10 +98,6 @@
     font-size: 20px;
     text-align: justify;
     padding-top: 30px; }
-    .main-content img {
-      display: block;
-      margin: auto;
-      width: 80%; }
   .right-bar {
     padding-top: 30px; }
     .right-bar img {
@@ -120,5 +108,4 @@
       width: 170px; }
   /* FOOTER STYLES */
   .footer {
-    text-align: center;
-    margin: auto; } }
+    text-align: center; } }

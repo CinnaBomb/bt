@@ -27,29 +27,23 @@ body{
 
 	*{
 		border: 1px solid $invisible;
+		//border: 1px solid red;
 	}
 }
 
 /* HEADER */
 .logo{
+	display: block;
 	position: relative;
-	margin: auto;
 	img{
 		display:block;
 		margin:auto;
-		width:70%;
-		min-width:300px;
-		max-width: 400px;
+		width: 400px;
 	}
 
 }
 
 .top-nav{
-	text-align: center;
-		//display: block;
-		text-align: center;
-		//border: 1px solid red;
-		//margin: auto;
 		height: 120px;
 		position: relative;
 		img{
@@ -58,17 +52,16 @@ body{
 		img:first-child{
 			visibility: visible;
 			display: block;
-			min-width: 500px;
-			width: 100%;
-			max-width: 800px;
+			max-width: 600px;
 			position: relative;
 			margin: auto;
 		}
-		a{
-			top: -100px;
+		.links{
 			position: relative;
-			//position: fixed;
-			display: inline-block;
+			text-align: center;
+			top: -550px;
+
+		a{
 			text-shadow: -2px 2px black;
 			text-decoration: none;
 			padding: 10px 20px 0 20px;
@@ -78,24 +71,21 @@ body{
 			letter-spacing: -2px;
 		}
 	}
+	}
 
 
 	/* LOLLIPOP SIDEBAR STYLES */
 	.side-nav{
-		display: block;
 		position:relative;
 	
 
 	.tree{
-		//margin:auto;
 		position:absolute;
-		display: block;
 		width: 230px;
 	}
 
 	[class*="lolli"]{
 		position: absolute;
-		display: block;
 		width: 120px;
 		font-family: Courgette;
 		color: brown;
@@ -165,9 +155,7 @@ body{
 		text-align: justify;
 		padding-top: 30px;
 		img{
-			display: block;
-			margin: auto;
-			width: 80%;
+
 		}
 	}
 	.right-bar{
@@ -184,7 +172,6 @@ body{
 	/* FOOTER STYLES */
 	.footer{
 		text-align: center;
-		margin:auto;
 	}
 }
 
