@@ -21,9 +21,9 @@
 
 /* MOBILE STYLES */
 @media only screen and (max-width: 767px){
-[class*='col-'] {
-	width: 100%;
-}
+	[class*='col-'] {
+		width: 100%;
+	}
 }
 
 /* TABLET STYLES*/
@@ -48,9 +48,9 @@
 @media only screen and (min-width: 1024px){
 
 	@media only screen and (min-width: 1400px){
-.grid{
-	width:80%;
-}
+		.grid{
+			width:80%;
+		}
 	}
 
 

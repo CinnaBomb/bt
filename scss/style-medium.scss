@@ -18,48 +18,255 @@ $invisible : rgba(255, 255, 255, 0);
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-
-
-	body{
+body{
+		font-family: courgette;
 		background-color: $main;
+
 		*{
-			border: 1px solid red;
+			border: 1px solid $invisible;
+			//border: 1px solid red;
 		}
 	}
+
+	/* HEADER */
 	.logo{
 		img{
-			display: block;
+			display:block;
 			margin:auto;
-			width: 300px;
+			width: 400px;
 		}
+
 	}
+
 	.top-nav{
+		position: relative;
+		//border: 1px solid blue;
 		img{
-			visibility: hidden;
+			width: 600px;
 			display: block;
-			margin: auto;
-		}
-		img:first-child{
-			visibility: visible;
-			width: 90%;
-		}
-	}
-	.side-nav{
-		//position: absolute;
-		img{
-			width: 0;
+			opacity: 0.0;
 			position: absolute;
 		}
-		[class*="lolli"]{
-			width: 120px;
-			transform: rotate(90deg);
+		img:first-child{
+			width: 600px;
 			display: block;
+			position: relative;
+			opacity: 1.0;
+			margin: auto;
+		
+	}
+		.links{
+			position: relative;
+			//margin: auto;
+			text-align: center;
+			top: -75px;
+			a{
+				//z-index:5;
+				text-shadow: -2px 2px black;
+				text-decoration: none;
+				padding: 0px 20px 0 20px;
+				color:white;
+				font-size: 180%;
+				letter-spacing: -2px;
+			}
+		}
+	}
+
+
+	/* LOLLIPOP SIDEBAR STYLES */
+	.side-nav{
+		position:relative;
+
+
+		.tree{
+			visibility: hidden;
+			//position:absolute;
+			width: 0px;
+		}
+
+		[class*="lolli"]{
+			position: absolute;
+			width: 120px;
+			color: brown;
+			//left:-10px;
+
+		}
+		[class*="text"]{
+			left: -10px;
+		}
+
+		.lolli-right{
+			transform: rotate(90deg);
+			//left: 89px;
+		}
+
+		.lolli-left{
+			transform: rotate(90deg);
+		}
+
+		.lolli-1{
+			top:20px;
+		}
+		.lolli-1-text{
+			top: 110px;
+			//left: 157px;
+		}
+
+		.lolli-2{
+			top: 90px;
+		}
+		.lolli-2-text{
+			top: 180px;
+			//left: -5px;
+		}
+
+		.lolli-3{
+			top: 160px;
+		}
+		.lolli-3-text{
+			top: 250px;
+			//left: 155px;
+		}
+
+		.lolli-4{
+			top: 230px;
+		}
+		.lolli-4-text{
+			top: 320px;
+			//left: -10px;
+		}
+
+		.lolli-5{
+			top: 300px;
+		}
+		.lolli-5-text{
+			top: 390px;
+			//left: 147px;
+		}
+	}
+
+	/*MAIN CONTENT STYLES */
+	.main-content{
+		padding: 0 20px;
+		color: brown;
+		font-size: 20px;
+		text-align: justify;
+		padding-top: 30px;
+		img{
+
 		}
 	}
 	.right-bar{
+		padding-top:30px;
 		img{
-			position:absolute;
-			width: 0;
+			border: 10px solid brown;
+			border-radius: 20px;
+			display: block;
+			margin: 15px auto;
+			width: 170px;
 		}
 	}
+
+	/* FOOTER STYLES */
+	.footer{
+		text-align: center;
+	}
+
+
+
+
+	// body{
+	// 	font-family: courgette;
+	// 	background-color: $main;
+	// 	*{
+
+	// 	border: 1px solid $invisible;
+	// 		//border: 1px solid red;
+	// 	}
+	// }
+	// .logo{
+	// 	img{
+	// 		display: block;
+	// 		margin:auto;
+	// 		width: 300px;
+	// 	}
+	// }
+	// .top-nav{
+	// 	img{
+	// 		visibility: hidden;
+	// 		display: block;
+	// 		margin: auto;
+	// 	}
+	// 	img:first-child{
+	// 		visibility: visible;
+	// 		width: 700px;
+	// 		//width: 90%;
+	// 	}
+	// }
+	// .side-nav{
+	// 	border:60px solid blue;
+	// 	position: relative;
+	// 	//position: absolute;
+	// 	img{
+	// 		width: 0;
+	// 		position: absolute;
+	// 	}
+	// 	[class*="lolli"]{
+	// 		position: absolute;
+	// 		width: 120px;
+	// 		transform: rotate(90deg);
+	// 		display: block;
+	// 	}
+	// 	[class*="text"]{
+	// 		width: 120px;
+	// 		transform: rotate(0deg);
+	// 		display: block;
+	// 	}
+
+	// 	.lolli-1{
+	// 		//top:20px;
+	// 	}
+	// 	.lolli-1-text{
+	// 		top: 110px;
+	// 		left: 157px;
+	// 	}
+
+	// 	.lolli-2{
+	// 		top: 90px;
+	// 	}
+	// 	.lolli-2-text{
+	// 		top: 180px;
+	// 		left: -5px;
+	// 	}
+
+	// 	.lolli-3{
+	// 		top: 160px;
+	// 	}
+	// 	.lolli-3-text{
+	// 		top: 250px;
+	// 		left: 155px;
+	// 	}
+
+	// 	.lolli-4{
+	// 		top: 230px;
+	// 	}
+	// 	.lolli-4-text{
+	// 		top: 320px;
+	// 		left: -10px;
+	// 	}
+
+	// 	.lolli-5{
+	// 		top: 300px;
+	// 	}
+	// 	.lolli-5-text{
+	// 		top: 390px;
+	// 		left: 147px;
+	// 	}
+	// }
+	// .right-bar{
+	// 	img{
+	// 		position:absolute;
+	// 		width: 0;
+	// 	}
+	// }
 }

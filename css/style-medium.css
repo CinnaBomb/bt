@@ -10,27 +10,90 @@
 /* TABLET STYLES*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
+    font-family: courgette;
     background-color: #fcf9d4; }
     body * {
-      border: 1px solid red; }
+      border: 1px solid rgba(255, 255, 255, 0); }
+  /* HEADER */
   .logo img {
     display: block;
     margin: auto;
-    width: 300px; }
-  .top-nav img {
-    visibility: hidden;
-    display: block;
-    margin: auto; }
-  .top-nav img:first-child {
-    visibility: visible;
-    width: 90%; }
-  .side-nav img {
-    width: 0;
-    position: absolute; }
-  .side-nav [class*="lolli"] {
-    width: 120px;
-    transform: rotate(90deg);
-    display: block; }
-  .right-bar img {
-    position: absolute;
-    width: 0; } }
+    width: 400px; }
+  .top-nav {
+    position: relative; }
+    .top-nav img {
+      width: 600px;
+      display: block;
+      opacity: 0.0;
+      position: absolute; }
+    .top-nav img:first-child {
+      width: 600px;
+      display: block;
+      position: relative;
+      opacity: 1.0;
+      margin: auto; }
+    .top-nav .links {
+      position: relative;
+      text-align: center;
+      top: -75px; }
+      .top-nav .links a {
+        text-shadow: -2px 2px black;
+        text-decoration: none;
+        padding: 0px 20px 0 20px;
+        color: white;
+        font-size: 180%;
+        letter-spacing: -2px; }
+  /* LOLLIPOP SIDEBAR STYLES */
+  .side-nav {
+    position: relative; }
+    .side-nav .tree {
+      visibility: hidden;
+      width: 0px; }
+    .side-nav [class*="lolli"] {
+      position: absolute;
+      width: 120px;
+      color: brown; }
+    .side-nav [class*="text"] {
+      left: -10px; }
+    .side-nav .lolli-right {
+      transform: rotate(90deg); }
+    .side-nav .lolli-left {
+      transform: rotate(90deg); }
+    .side-nav .lolli-1 {
+      top: 20px; }
+    .side-nav .lolli-1-text {
+      top: 110px; }
+    .side-nav .lolli-2 {
+      top: 90px; }
+    .side-nav .lolli-2-text {
+      top: 180px; }
+    .side-nav .lolli-3 {
+      top: 160px; }
+    .side-nav .lolli-3-text {
+      top: 250px; }
+    .side-nav .lolli-4 {
+      top: 230px; }
+    .side-nav .lolli-4-text {
+      top: 320px; }
+    .side-nav .lolli-5 {
+      top: 300px; }
+    .side-nav .lolli-5-text {
+      top: 390px; }
+  /*MAIN CONTENT STYLES */
+  .main-content {
+    padding: 0 20px;
+    color: brown;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 30px; }
+  .right-bar {
+    padding-top: 30px; }
+    .right-bar img {
+      border: 10px solid brown;
+      border-radius: 20px;
+      display: block;
+      margin: 15px auto;
+      width: 170px; }
+  /* FOOTER STYLES */
+  .footer {
+    text-align: center; } }

@@ -1,20 +1,14 @@
 /*TODO: FONTS AND TRANSITION ANIMATIONS*/
 /* GLOBAL STYLES */
 @import url("https://fonts.googleapis.com/css?family=Courgette");
-@font-face {
-  font-family: 'circus';
-  src: url("../assets/Circus.ttf"); }
-
-@font-face {
-  font-family: 'spray';
-  src: url("../assets/Sprayscript.ttf"); }
-
 /* LAPTOP STYLES */
 @media only screen and (min-width: 1024px) {
   body {
+    font-family: courgette;
     background-color: #fcf9d4; }
     body * {
-      border: 1px solid rgba(255, 255, 255, 0); }
+      border: 1px solid rgba(255, 255, 255, 0);
+      border: 1px solid red; }
   /* HEADER */
   .logo {
     display: block;
@@ -31,7 +25,7 @@
     .top-nav img:first-child {
       visibility: visible;
       display: block;
-      max-width: 600px;
+      width: 600px;
       position: relative;
       margin: auto; }
     .top-nav .links {
@@ -44,25 +38,21 @@
         padding: 10px 20px 0 20px;
         color: white;
         font-size: 180%;
-        font-family: 'courgette';
         letter-spacing: -2px; }
   /* LOLLIPOP SIDEBAR STYLES */
   .side-nav {
     position: relative; }
     .side-nav .tree {
+      left: -3px;
       position: absolute;
       width: 230px; }
     .side-nav [class*="lolli"] {
       position: absolute;
       width: 120px;
-      font-family: Courgette;
       color: brown; }
     .side-nav .lolli-right {
       transform: rotate(45deg);
-      left: 89px;
-      -webkit-transition: left 2s; }
-      .side-nav .lolli-right:hover {
-        left: 20px; }
+      left: 89px; }
     .side-nav .lolli-left {
       transform: rotate(-45deg); }
     .side-nav .lolli-1 {
@@ -93,7 +83,6 @@
   /*MAIN CONTENT STYLES */
   .main-content {
     padding: 0 20px;
-    font-family: 'Courgette', cursive;
     color: brown;
     font-size: 20px;
     text-align: justify;

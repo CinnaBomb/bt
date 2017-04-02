@@ -2,15 +2,15 @@
 /*TODO: FONTS AND TRANSITION ANIMATIONS*/
 /* GLOBAL STYLES */
 
-@font-face{
-	font-family: 'circus';
-	src: url("../assets/Circus.ttf");
-}
+// @font-face{
+// 	font-family: 'circus';
+// 	src: url("../assets/Circus.ttf");
+// }
 
-@font-face{
-	font-family: 'spray';
-	src: url("../assets/Sprayscript.ttf");
-}
+// @font-face{
+// 	font-family: 'spray';
+// 	src: url("../assets/Sprayscript.ttf");
+// }
 
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 
@@ -22,28 +22,32 @@ $invisible : rgba(255, 255, 255, 0);
 @media only screen and (min-width: 1024px){
 
 
-body{
-	background-color: $main;
+	body{
+		font-family: courgette;
+		background-color: $main;
 
-	*{
-		border: 1px solid $invisible;
-		//border: 1px solid red;
-	}
-}
-
-/* HEADER */
-.logo{
-	display: block;
-	position: relative;
-	img{
-		display:block;
-		margin:auto;
-		width: 400px;
+		*{
+			border: 1px solid $invisible;
+			border: 1px solid red;
+			a{
+				//border: 1px solid red;
+			}
+		}
 	}
 
-}
+	/* HEADER */
+	.logo{
+		display: block;
+		position: relative;
+		img{
+			display:block;
+			margin:auto;
+			width: 400px;
+		}
 
-.top-nav{
+	}
+
+	.top-nav{
 		height: 120px;
 		position: relative;
 		img{
@@ -52,7 +56,7 @@ body{
 		img:first-child{
 			visibility: visible;
 			display: block;
-			max-width: 600px;
+			width: 600px;
 			position: relative;
 			margin: auto;
 		}
@@ -61,95 +65,113 @@ body{
 			text-align: center;
 			top: -550px;
 
-		a{
-			text-shadow: -2px 2px black;
-			text-decoration: none;
-			padding: 10px 20px 0 20px;
-			color:white;
-			font-size: 180%;
-			font-family: 'courgette';
-			letter-spacing: -2px;
+			a{
+				text-shadow: -2px 2px black;
+				text-decoration: none;
+				padding: 10px 20px 0 20px;
+				color:white;
+				font-size: 180%;
+				letter-spacing: -2px;
+			}
 		}
-	}
 	}
 
 
 	/* LOLLIPOP SIDEBAR STYLES */
 	.side-nav{
 		position:relative;
-	
 
-	.tree{
-		position:absolute;
-		width: 230px;
-	}
-
-	[class*="lolli"]{
-		position: absolute;
-		width: 120px;
-		font-family: Courgette;
-		color: brown;
-
-	}
-
-	.lolli-right{
-		transform: rotate(45deg);
-		left: 89px;
-		-webkit-transition: left 2s;
-		&:hover{
-			left: 20px;
+		.tree{
+			//position: relative;
+			left: -3px;
+			position:absolute;
+			width: 230px;
 		}
-	}
 
-	.lolli-left{
-		transform: rotate(-45deg);
-	}
+		[class*="lolli"]{
+			position: absolute;
+			width: 120px;
+			color: brown;
 
-	.lolli-1{
-		top:20px;
-	}
-	.lolli-1-text{
-		top: 110px;
-		left: 157px;
-	}
+		}
 
-	.lolli-2{
-		top: 90px;
-	}
-	.lolli-2-text{
-		top: 180px;
-		left: -5px;
-	}
+		// 		a{
+		// 			position: absolute;
+		// 			img{
+		// 	position: relative;
+		// 	width: 120px;
+		// 	color: brown;
+		// }
 
-	.lolli-3{
-		top: 160px;
-	}
-	.lolli-3-text{
-		top: 250px;
-		left: 155px;
-	}
+		// }
+// a{
+// 	border: 2px solid blue;
+// 		[class*="lolli"]{
+// 			position: absolute;
+// 			width: 120px;
+// 			color: brown;
 
-	.lolli-4{
-		top: 230px;
-	}
-	.lolli-4-text{
-		top: 320px;
-		left: -10px;
-	}
+// 		}
+// 	}
 
-	.lolli-5{
-		top: 300px;
+		.lolli-right{
+			transform: rotate(45deg);
+			left: 89px;
+			// -webkit-transition: left 2s;
+			// &:hover{
+			// 	left: 20px;
+			// }
+		}
+
+		.lolli-left{
+			transform: rotate(-45deg);
+		}
+
+		.lolli-1{
+			top:20px;
+		}
+		.lolli-1-text{
+			top: 110px;
+			left: 157px;
+		}
+
+		.lolli-2{
+			top: 90px;
+		}
+		.lolli-2-text{
+			top: 180px;
+			left: -5px;
+		}
+
+		.lolli-3{
+			top: 160px;
+		}
+		.lolli-3-text{
+			top: 250px;
+			left: 155px;
+		}
+
+		.lolli-4{
+			top: 230px;
+		}
+		.lolli-4-text{
+			top: 320px;
+			left: -10px;
+		}
+
+		.lolli-5{
+			top: 300px;
+		}
+		.lolli-5-text{
+			top: 390px;
+			left: 147px;
+		}
+
 	}
-	.lolli-5-text{
-		top: 390px;
-		left: 147px;
-	}
-}
 
 	/*MAIN CONTENT STYLES */
 	.main-content{
 		padding: 0 20px;
-		font-family: 'Courgette', cursive;
 		color: brown;
 		font-size: 20px;
 		text-align: justify;
