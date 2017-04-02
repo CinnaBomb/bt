@@ -32,7 +32,13 @@ body:after {
 }
 @media only screen and (min-width: 1024px) {
     body:after {
-        content: "1024 and up";
+        content: "1024 to 1400";
         background-color: hsla(360,60%,40%,0.7);
+    }
+}
+@media only screen and (min-width: 1400px) {
+    body:after {
+        content: "1400 and up";
+        background-color: hsla(120,60%,40%,0.7);
     }
 }

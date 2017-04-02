@@ -26,5 +26,10 @@ body:after {
 
 @media only screen and (min-width: 1024px) {
   body:after {
-    content: "1024 and up";
+    content: "1024 to 1400";
     background-color: rgba(163, 41, 41, 0.7); } }
+
+@media only screen and (min-width: 1400px) {
+  body:after {
+    content: "1400 and up";
+    background-color: rgba(41, 163, 41, 0.7); } }
